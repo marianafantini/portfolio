@@ -8,17 +8,17 @@ const {Title} = Typography;
     <img
       alt="Profile photo"
       class="profile-photo"
-      src="../../public/assets/foto-rosto-MarianaFantini.jpeg"
+      src="/portfolio/assets/foto-rosto-MarianaFantini.jpeg"
       width="250"
     />
     <Title :level="2">Mariana Fantini</Title>
     <Title :level="4" class="presentation-description">Software Engineer (she/her)</Title>
     <div>
       <a target="_blank" href="https://www.github.com/marianafantini/">
-        <Avatar shape="square" src="../../public/assets/github.svg"></Avatar>
+        <Avatar shape="square" src="/portfolio/assets/github.svg"></Avatar>
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/marianafantini/">
-        <Avatar shape="square" src="../../public/assets/linkedin.svg"></Avatar>
+        <Avatar shape="square" src="/portfolio/assets/linkedin.svg"></Avatar>
       </a>
     </div>
   </div>

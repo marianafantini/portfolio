@@ -1,5 +1,4 @@
 <script setup>
-import {defineProps} from "vue";
 import {Card} from "ant-design-vue";
 const props = defineProps(['title', 'description'])
 </script>
