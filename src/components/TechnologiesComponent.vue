@@ -13,7 +13,7 @@ const languages = ["clojure", "cljs", "vuejs", "js", "elixir", "aws", "github", 
       class="avatar"
       shape="square"
       size="large"
-      :src="'/portfolio/assets/' + language + '.svg'"
+      :src="'./assets/' + language + '.svg'"
       :alt="language"
       :title="language"
     />
