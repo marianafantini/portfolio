@@ -1,11 +1,18 @@
 <script setup>
-import QualificationCardComponent from "../components/QualificationCardComponent.vue";
+import {Typography} from "ant-design-vue";
+const {Title} = Typography;
+import QualificationCardComponent from "@/components/QualificationCardComponent.vue";
 
 const qualifications = [
   {
-    title: "Technical Depth",
+    title: "Diverse Background",
     description:
       "I've worked with both frontend and backend technologies, allowing me to bridge the gap seamlessly",
+  },
+  {
+    title: "Deep Technical Knowledge",
+    description:
+      "Over 6 years of industry experience, and counting. Experience with both internal and user-facing products",
   },
   {
     title: "User-Centric Approach",
@@ -19,26 +26,30 @@ const qualifications = [
 </script>
 
 <template>
-  <div class="qualification-list">
-    <component
-      v-for="qualification in qualifications"
-      :key="qualification"
-      :is="QualificationCardComponent"
-      :title="qualification.title"
-      :description="qualification.description"
-    >
-    </component>
+  <div class="qualifications">
+    <Title :level="3">Why me?</Title>
+
+    <div class="qualification-list">
+      <component
+        v-for="qualification in qualifications"
+        :key="qualification"
+        :is="QualificationCardComponent"
+        :title="qualification.title"
+        :description="qualification.description"
+      >
+      </component>
+    </div>
   </div>
 </template>
 
 <style>
 .qualification-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   justify-content: space-evenly;
 }
 @media (max-width: 1024px) {
-  .qualification-list {
+  .qualifications {
     padding: 1rem;
   }
 }

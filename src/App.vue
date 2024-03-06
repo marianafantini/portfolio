@@ -1,7 +1,7 @@
 <script setup>
 import {Layout, ConfigProvider} from "ant-design-vue";
 import ContentView from "./views/ContentView.vue";
-const {Header, Footer, Content} = Layout;
+const {Header, Content} = Layout;
 
 </script>
 
@@ -19,8 +19,6 @@ const {Header, Footer, Content} = Layout;
         <ContentView></ContentView>
       </Content>
     </Layout>
-
-    <Footer></Footer>
   </Layout>
 </ConfigProvider>
 </template>
@@ -31,6 +29,7 @@ const {Header, Footer, Content} = Layout;
 }
 .header {
   display: flex;
+  position: sticky;
 }
 
 @media (min-width: 1024px) {
@@ -44,6 +43,7 @@ const {Header, Footer, Content} = Layout;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    position: sticky;
   }
   .presentation-section .profile-photo {
     padding: 1rem;

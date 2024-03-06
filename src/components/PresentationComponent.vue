@@ -11,16 +11,8 @@ const {Title} = Typography;
       src="/assets/foto-rosto-MarianaFantini.jpeg"
       width="250"
     />
-    <Title :level="2">Mariana Fantini</Title>
-    <Title :level="4" class="presentation-description">Software Engineer (she/her)</Title>
-    <div>
-      <a target="_blank" href="https://www.github.com/marianafantini/">
-        <Avatar shape="square" src="./assets/github.svg"></Avatar>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/marianafantini/">
-        <Avatar shape="square" src="./assets/linkedin.svg"></Avatar>
-      </a>
-    </div>
+    <Title class="presentation-name" :level="2">Mariana Fantini</Title>
+    <Title class="presentation-description" :level="4">Software Engineer (she/her)</Title>
   </div>
 </template>
 
@@ -32,9 +24,12 @@ const {Title} = Typography;
   padding: 2rem;
 }
 .presentation-section .profile-photo {
-  padding: 1rem;
+  padding: 0rem 1rem;
+}
+.presentation-name {
+  margin-bottom: 0;
 }
 .presentation-description {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 </style>
